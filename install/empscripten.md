@@ -75,5 +75,18 @@ Hello, World!
 
 ```bash
 emcc main.c -o index.html
-open -a safari index.html
 ```
+
+Run a Local Server: [localhost:8000](http://localhost:8000)
+
+```bash
+python -m http.server
+
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+127.0.0.1 - - [24/Feb/2023 20:53:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Feb/2023 20:53:00] "GET /index.js HTTP/1.1" 200 -
+127.0.0.1 - - [24/Feb/2023 20:53:00] "GET /index.wasm HTTP/1.1" 200 -
+```
+
+![helloworld](images/helloworld.png)
+
