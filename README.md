@@ -2,12 +2,6 @@
 
 ---
 
-## OpenBB
+## Ref
 
-- [OpenBB](openbb.md)
-  - Install OpenBB Terminal
-  - Start OpenBB Terminal
-
-OpenBB Chart:
-
-![](images/candle.png)
+- Start [OpenBB](openbb/README.md)

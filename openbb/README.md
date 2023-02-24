@@ -1,5 +1,7 @@
 # OpenBB
 
+![](images/candle.png)
+
 - [OpenBB](https://openbb.co/)
   - [pricing](https://openbb.co/pricing)
   - [blog](https://openbb.co/blog)
