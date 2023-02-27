@@ -9,7 +9,6 @@
 - github: [Emscripten SDK](https://github.com/emscripten-core/emsdk)
 
 ```bash
-# mac
 cd ~/.local/share
 
 git clone https://github.com/emscripten-core/emsdk.git
@@ -89,4 +88,3 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
 ![helloworld](images/helloworld.png)
-
