@@ -1,18 +1,23 @@
-# Terminal
+# terminal
 
-## Tech stack
+## tech stack
 
 - WebAssembly
-  - empscripten: [install](install/empscripten.md)
+  - empscripten: [install](install/empscripten.md), helloworld
 - WebSocket
 - WebGL
 
-## Code
+## code
 
-- `src/server/`: [README](src/server/README.md)
+### websocket
+
+#### simple server-client
+
+- `src/server/`: [readme](src/server/README.md), [src/main.rs](src/server/src/main.rs)
+- `src/client/`: [readme](src/client/README.md), [index.js](src/client/index.js)
 
 ---
 
-## Ref
+## ref
 
 - Start [OpenBB](openbb/README.md)
