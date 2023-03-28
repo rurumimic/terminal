@@ -1,6 +1,6 @@
-# webgl
+# WebGL
 
-## ref
+## Ref
 
 - khronos: [webgl](https://www.khronos.org/webgl/)
 - mdn: [webgl](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)

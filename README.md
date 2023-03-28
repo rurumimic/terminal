@@ -1,6 +1,6 @@
-# terminal
+# Terminal
 
-## tech stack
+## Tech Stack
 
 - WebAssembly
   - [empscripten](empscripten/README.md)
@@ -9,7 +9,27 @@
 
 ---
 
-## code
+## Architecture
+
+```mermaid
+graph TB;
+
+subgraph API
+C(WebSocket)
+end
+
+subgraph Browser
+style Browser fill:#FFD8D8,stroke:#FFA7A7;
+direction LR
+B[WASM] -->|Process| A[WebGL]
+end
+
+C -->|Stream| Browser
+```
+
+---
+
+## Code
 
 ### WebAssembly
 
@@ -32,6 +52,6 @@
 
 ---
 
-## ref
+## Ref
 
 - Start [OpenBB](openbb/README.md)
