@@ -1,6 +1,6 @@
 # OpenBB
 
-![](images/candle.png)
+![candle](images/candle.png)
 
 - [OpenBB](https://openbb.co/)
   - [pricing](https://openbb.co/pricing)
@@ -51,4 +51,4 @@ reopen shell and:
 openbb
 ```
 
-![](images/openbb.png)
+![openbb](images/openbb.png)

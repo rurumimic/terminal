@@ -82,7 +82,7 @@ InstalledDir: /usr/bin
 
 - [tutorial](https://emscripten.org/docs/getting_started/Tutorial.html)
 
-[helloworld/main.c](helloworld/main.c):
+[src/helloworld/main.c](src/helloworld/main.c):
 
 ```c
 #include <stdio.h>
