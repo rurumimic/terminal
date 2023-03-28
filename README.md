@@ -27,6 +27,12 @@ end
 C -->|Stream| Browser
 ```
 
+- WASM provides high performance by running code written in C, C++, and Rust.
+- WASM can run on a variety of platforms.
+- WASM provides good security by limiting direct access to critical resources such as memory.
+- Process real-time data with WebSockets.
+- WebGL uses GPUs to run high-performance graphics applications.
+
 ---
 
 ## Code
