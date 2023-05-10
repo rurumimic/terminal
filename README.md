@@ -87,9 +87,8 @@ C -->|Stream| Browser
 
 ### WebGL
 
-#### simple canvas
-
 - canvas: [readme](webgl/src/canvas/README.md)
+- baduk: [readme](webgl/src/baduk/README.md)
 
 ---
 
