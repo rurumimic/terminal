@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="viewport" content="width=device-width"/>
+    <meta charSet="utf-8"/>
+    <title>rurumimic/terminal: 📈 단말</title>
+    <script src="https://google.github.io/typograms/typograms.js"></script>
+  </head>
+  <body>
+    <h1 id="terminal">Terminal</h1>
+    <h2 id="tech-stack">Tech Stack</h2>
+    <ul>
+    <li>WebAssembly<ul>
+    <li><a href="empscripten/README.md">empscripten</a></li>
+    </ul>
+    </li>
+    <li>WebSocket</li>
+    <li><a href="webgl/README.md">WebGL</a></li>
+    </ul>
+    <hr>
+    <h2 id="architecture">Architecture</h2>
+    <script type="text/typogram">
+            +-----------------+
+            |       API       |
+            | .-------------. |
+            | |  WebSocket  | |
+            | '------+------' |
+            +--------+--------+
+                     |
+                   Stream
+                     |
+                     v
+    +-----------------------------------+
+    |             Browser               |
+    | +--------+            +---------+ |
+    | |  WASM  +--Process-->|  WebGL  | |
+    | +--------+            +---------+ |
+    +-----------------------------------+
+    </script>
+    <h3 id="pros-and-cons">pros and cons</h3>
+    <h4 id="advantages">advantages</h4>
+    <ol>
+    <li>Real-time communication</li>
+    <li>Efficient data processing</li>
+    <li>High-performance rendering</li>
+    <li>Scalability</li>
+    <li>Browser compatibility</li>
+    </ol>
+    <details>
+      <summary>read more...</summary>
+
+      <ol>
+      <li><strong>Real-time communication</strong>: WebSocket allows for bidirectional communication between the server (API) and the client (Browser), making it suitable for real-time applications and reducing latency.</li>
+      <li><strong>Efficient data processing</strong>: WASM is a binary instruction format designed for secure and fast execution, enabling efficient processing of the data received from the WebSocket.</li>
+      <li><strong>High-performance rendering</strong>: WebGL is a JavaScript API for rendering interactive 2D and 3D graphics in the browser, allowing for high-performance graphics without the need for plugins.</li>
+      <li><strong>Scalability</strong>: This architecture allows the server to handle multiple WebSocket connections concurrently, enabling the system to scale effectively.</li>
+      <li><strong>Browser compatibility</strong>: Since both WebAssembly and WebGL are supported by modern web browsers, the architecture is compatible across different platforms and devices.</li>
+      </ol>
+
+    </details>
+
+    <h4 id="disadvantages">disadvantages</h4>
+    <ol>
+    <li>Limited browser support</li>
+    <li>Complexity</li>
+    <li>Security concerns</li>
+    <li>Potential performance bottlenecks</li>
+    <li>Dependency on JavaScript</li>
+    </ol>
+    <details>
+      <summary>read more...</summary>
+
+      <ol>
+      <li><strong>Limited browser support</strong>: Older browsers may not support WebSocket, WebAssembly, or WebGL, which could limit the reach of the application.</li>
+      <li><strong>Complexity</strong>: The architecture might be more complex compared to a traditional RESTful API, increasing the learning curve for developers.</li>
+      <li><strong>Security concerns</strong>: WebSocket connections might be vulnerable to security threats like cross-site WebSocket hijacking. Also, WebAssembly code execution can expose vulnerabilities that need to be mitigated.</li>
+      <li><strong>Potential performance bottlenecks</strong>: While WASM and WebGL are designed for high-performance, some devices might still struggle with the processing and rendering tasks, particularly in resource-intensive applications.</li>
+      <li><strong>Dependency on JavaScript</strong>: While WASM is intended to be a low-level virtual machine that runs code at near-native speed, it still relies on JavaScript for various functionalities, such as interacting with the DOM or handling events, which can be a potential bottleneck in some cases.</li>
+      </ol>
+
+    </details>
+
+    <hr>
+    <h2 id="code">Code</h2>
+    <h3 id="webassembly">WebAssembly</h3>
+    <h4 id="hello-world">hello world</h4>
+    <ul>
+    <li>helloworld: <a href="empscripten/src/helloworld/main.c">main.c</a></li>
+    </ul>
+    <h3 id="websocket">WebSocket</h3>
+    <h4 id="simple-server-client">simple server-client</h4>
+    <ul>
+    <li>server: <a href="websocket/src/server/README.md">readme</a>, <a href="websocket/src/server/src/main.rs">src/main.rs</a></li>
+    <li>client: <a href="websocket/src/client/README.md">readme</a>, <a href="websocket/src/client/index.js">index.js</a></li>
+    </ul>
+    <h3 id="webgl">WebGL</h3>
+    <ul>
+    <li>canvas: <a href="webgl/src/canvas/README.md">readme</a></li>
+    <li>baduk: <a href="webgl/src/baduk/README.md">readme</a></li>
+    </ul>
+    <hr>
+    <h2 id="ref">Ref</h2>
+    <ul>
+    <li>Start <a href="openbb/README.md">OpenBB</a></li>
+    </ul>
+  </body>
+</html>
+
