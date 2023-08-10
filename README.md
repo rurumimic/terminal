@@ -11,20 +11,28 @@
 
 ## Architecture
 
-```mermaid
-graph TB;
-
-subgraph API
-C(WebSocket)
-end
-
-subgraph Browser
-style Browser fill:#FFD8D8,stroke:#FFA7A7;
-direction LR
-B[WASM] -->|Process| A[WebGL]
-end
-
-C -->|Stream| Browser
+```html
+<body>
+    <script src="https://google.github.io/typograms/typograms.js"></script>
+    <script type="text/typogram">
+            +-----------------+
+            |       API       |
+            | .-------------. |
+            | |  WebSocket  | |
+            | '------+------' |
+            +--------+--------+
+                     |
+                   Stream
+                     |
+                     v
+    +-----------------------------------+
+    |             Browser               |
+    | +--------+            +---------+ |
+    | |  WASM  +--Process-->|  WebGL  | |
+    | +--------+            +---------+ |
+    +-----------------------------------+
+    </script>
+</body>
 ```
 
 ### pros and cons
